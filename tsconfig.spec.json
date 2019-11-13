@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "types": [
+      "jest",
+      "node"
+    ]
+  },
+  "files": [],
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": true
+  }
+}

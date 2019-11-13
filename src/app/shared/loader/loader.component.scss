@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+span#loader {
+  width: 5vw;
+  height: 5vw;
+  display: block;
+  border-radius: 50%;
+  border: .1rem solid $jesi-blue;
+  box-shadow: 0 -2px 3px 1px $jesi-green;
+  animation: jesiRotate 2s linear infinite;
+  margin: .5rem;
+
+  &.centered {
+    margin: .5rem auto;
+  }
+}
+
+@keyframes jesiRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

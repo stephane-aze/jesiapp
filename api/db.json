@@ -1,0 +1,549 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "login": "gmartin",
+      "password": "martin",
+      "firstName": "George",
+      "lastName": "Martin",
+      "email": "george.r.r@martin.com",
+      "optEmail": true
+    }
+  ],
+  "characters": [
+    {
+      "id": 27,
+      "name": "Tywin Lannister",
+      "gender": "Male",
+      "titles": [
+        "Lord of Casterly Rock",
+        "Shield of Lannisport",
+        "Warden of the West",
+        "Hand of the King",
+        "Savior of the City"
+      ],
+      "aliases": [
+        "The Lion of Lannister",
+        "The Old Lion",
+        "The Great Lion of the Rock"
+      ],
+      "houseId": 229,
+      "playedBy": "Charles Dance",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/en/b/b9/Tywin_Lannister_Profile_Charles_Dance.jpg"
+    },
+    {
+      "id": 148,
+      "name": "Arya Stark",
+      "gender": "Female",
+      "titles": [
+        "Princess"
+      ],
+      "aliases": [
+        "Arya Horseface",
+        "Arya Underfoot",
+        "Arry",
+        "Lumpyface",
+        "Lumpyhead",
+        "Stickboy",
+        "Weasel",
+        "Nymeria",
+        "Squan",
+        "Saltb",
+        "Cat of the Canaly",
+        "Bets",
+        "The Blind Girh",
+        "The Ugly Little Girl",
+        "Mercedenl",
+        "Mercye"
+      ],
+      "houseId": 362,
+      "playedBy": "Maisie Williams",
+      "imagePath": "https://img-4.linternaute.com/jJPPl9BIVEIxSIvin2WlAhjjEF0=/1200x/smart/a0adccc754a24357977a5fbda68d7811/ccmcms-linternaute/11104180.jpg"
+    },
+    {
+      "id": 181,
+      "name": "Benjen Stark",
+      "gender": "Male",
+      "titles": [
+        "First Ranger"
+      ],
+      "aliases": [
+        "The Wolf Pup",
+        "Ben Stark"
+      ],
+      "houseId": 999,
+      "playedBy": "Matteo Elezi",
+      "imagePath": "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0f/610_Benjen_Promo_Crop.png/revision/latest?cb=20160629183134"
+    },
+    {
+      "id": 208,
+      "name": "Brandon Stark",
+      "gender": "Male",
+      "titles": [
+        "Prince of Winterfell"
+      ],
+      "aliases": [
+        "Bran",
+        "Bran the Broken",
+        "The Winged Wolf"
+      ],
+      "houseId": 362,
+      "playedBy": "Isaac Hempstead-Wright",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/3/33/Bran_Stark.png/revision/latest/scale-to-width-down/333?cb=20190521022312&path-prefix=fr"
+    },
+    {
+      "id": 223,
+      "name": "Brynden Tully",
+      "gender": "Male",
+      "titles": [
+        "Ser",
+        "Warden of the Southern Marches",
+        "Knight of the Gate"
+      ],
+      "aliases": [
+        "Blackfish",
+        "Ser Brynden the Blackfish",
+        "Brynden Blackfish"
+      ],
+      "houseId": 395,
+      "playedBy": "Clive Russell",
+      "imagePath": "https://i.pinimg.com/originals/fe/09/4a/fe094a102a0f1ce975238a213afe265b.jpg"
+    },
+    {
+      "id": 232,
+      "name": "Catelyn Stark",
+      "gender": "Female",
+      "titles": [
+        "Lady of Winterfell"
+      ],
+      "aliases": [
+        "Catelyn Tully",
+        "Lady Stoneheart",
+        "The Silent Sistet",
+        "Mother Mercilesr",
+        "The Hangwomans"
+      ],
+      "houseId": 362,
+      "playedBy": "Michelle Fairley",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/f/f4/Catelyn_Stark.png/revision/latest/scale-to-width-down/350?cb=20170706164827&path-prefix=fr"
+    },
+    {
+      "id": 238,
+      "name": "Cersei Lannister",
+      "gender": "Female",
+      "titles": [
+        "Queen Dowager",
+        "Protector of the Realm",
+        "Lady of Casterly Rock",
+        "Queen Regent"
+      ],
+      "aliases": [
+        "Light of the West"
+      ],
+      "houseId": 229,
+      "playedBy": "Lena Headey",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/b/b0/Cersei_Lannister.png/revision/latest/scale-to-width-down/333?cb=20190516212756&path-prefix=fr"
+    },
+    {
+      "id": 339,
+      "name": "Eddard Stark",
+      "gender": "Male",
+      "titles": [
+        "Lord of Winterfell",
+        "Warden of the North",
+        "Hand of the King",
+        "Protector of the Realm",
+        "Regent"
+      ],
+      "aliases": [
+        "Ned",
+        "The Quiet Wolf"
+      ],
+      "houseId": 362,
+      "playedBy": "Sean Bean",
+      "imagePath": "https://vignette.wikia.nocookie.net/gameofthrones/images/3/34/Eddard_Stark.jpg/revision/latest?cb=20190701140812"
+    },
+    {
+      "id": 346,
+      "name": "Edmure Tully",
+      "gender": "Male",
+      "titles": [
+        "Ser",
+        "Lord of Riverrun"
+      ],
+      "aliases": [
+        ""
+      ],
+      "houseId": 395,
+      "playedBy": "Tobias Menzies",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/3/33/Edmure_Tully.png/revision/latest?cb=20190520134845&path-prefix=fr"
+    },
+    {
+      "id": 529,
+      "name": "Jaime Lannister",
+      "gender": "Male",
+      "titles": [
+        "Ser",
+        "Lord Commander of the Kingsguard",
+        "Warden of the East"
+      ],
+      "aliases": [
+        "The Kingslayer",
+        "The Lion of Lannister",
+        "The Young Lion",
+        "Cripple"
+      ],
+      "houseId": 229,
+      "playedBy": "Nikolaj Coster-Waldau",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Jaime_Lannister-Nikolaj_Coster-Waldau.jpg/220px-Jaime_Lannister-Nikolaj_Coster-Waldau.jpg"
+    },
+    {
+      "id": 547,
+      "name": "Jeor Mormont",
+      "gender": "Male",
+      "titles": [
+        "Lord of Bear Island",
+        "Lord Commander of the Night's Watch"
+      ],
+      "aliases": [
+        "The Old Bear"
+      ],
+      "houseId": 999,
+      "playedBy": "James Cosmo",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/6/6b/Jeor_Mormont.jpg/revision/latest?cb=20141231210109&path-prefix=fr"
+    },
+    {
+      "id": 565,
+      "name": "Joffrey Baratheon",
+      "gender": "Male",
+      "titles": [
+        "King of the Andals, the Rhoynar and the First Men",
+        "Lord of the Seven Kingdoms",
+        "Protector of the Realm"
+      ],
+      "aliases": [
+        "Joffrey the Illborn",
+        "The Young Usurper",
+        "Aerys the Third",
+        "Joffrey-called-Baratheon"
+      ],
+      "houseId": 229,
+      "playedBy": "Jack Gleeson",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Joffrey_Baratheon-Jack_Gleeson.jpg/220px-Joffrey_Baratheon-Jack_Gleeson.jpg"
+    },
+    {
+      "id": 583,
+      "name": "Jon Snow",
+      "gender": "Male",
+      "titles": [
+        "Lord Commander of the Night's Watch"
+      ],
+      "aliases": [
+        "Lord Snow",
+        "Ned Stark's Bastard",
+        "The Snow of Winterfell",
+        "The Crow-Come-Over",
+        "The 998th Lord Commander of the Night's Watch",
+        "The Bastard of Winterfell",
+        "The Black Bastard of the Wall",
+        "Lord Crow"
+      ],
+      "houseId": 999,
+      "playedBy": "Kit Harington",
+      "imagePath": "http://ekladata.com/zRSQrRiH1jJ3dciZOeSas7e6lkY.jpg"
+    },
+    {
+      "id": 823,
+      "name": "Petyr Baelish",
+      "gender": "Male",
+      "titles": [
+        "Master of coin",
+        "Lord Paramount of the Trident",
+        "Lord of Harrenhal",
+        "Lord Protector of the Vale"
+      ],
+      "aliases": [
+        "Littlefinger"
+      ],
+      "houseId": 11,
+      "playedBy": "Aidan Gillen",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Aidan_Gillen_playing_Petyr_Baelish.jpg/220px-Aidan_Gillen_playing_Petyr_Baelish.jpg"
+    },
+    {
+      "id": 862,
+      "name": "Renly Baratheon",
+      "gender": "Male",
+      "titles": [
+        "Lord Paramount of the Stormlands",
+        "Lord of Storm's End",
+        "Master of laws",
+        "Lord of the Seven Kingdoms"
+      ],
+      "aliases": [
+        "The King in Highgarden",
+        "The King in the South"
+      ],
+      "houseId": 17,
+      "playedBy": "Gethin Anthony",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/e/e6/Renly_Baratheon.png/revision/latest/scale-to-width-down/319?cb=20150820171429&path-prefix=fr"
+    },
+    {
+      "id": 901,
+      "name": "Robert I Baratheon",
+      "gender": "Male",
+      "titles": [
+        "King of the Andals, the Rhoynar and the First Men",
+        "Lord of the Seven Kingdoms",
+        "Protector of the Realm",
+        "Ser"
+      ],
+      "aliases": [
+        "The Usurper",
+        "Demon of the Trident",
+        "The Whoremonger King"
+      ],
+      "houseId": 17,
+      "playedBy": "Mark Addy",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/d/d8/Robert_Baratheon.jpg/revision/latest/scale-to-width-down/2000?cb=20150820171130&path-prefix=fr"
+    },
+    {
+      "id": 954,
+      "name": "Samwell Tarly",
+      "gender": "Male",
+      "titles": [
+        ""
+      ],
+      "aliases": [
+        "Sam",
+        "Ser Piggy",
+        "Prince Pork-chop",
+        "Lady Piggy",
+        "Sam the Slayer",
+        "Black Sam",
+        "Lord of Ham"
+      ],
+      "houseId": 999,
+      "playedBy": "John Bradley-West",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/2/2f/Samwell_Tarly.png/revision/latest/scale-to-width-down/350?cb=20190419220903&path-prefix=fr"
+    },
+    {
+      "id": 955,
+      "name": "Sandor Clegane",
+      "gender": "Male",
+      "titles": [
+        ""
+      ],
+      "aliases": [
+        "The Hound",
+        "Dog"
+      ],
+      "houseId": 72,
+      "playedBy": "Rory McCann",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/The_Hound_in_%27The_Children%27.jpg/220px-The_Hound_in_%27The_Children%27.jpg"
+    },
+    {
+      "id": 957,
+      "name": "Sansa Stark",
+      "gender": "Female",
+      "titles": [
+        "Princess"
+      ],
+      "aliases": [
+        "Little bird",
+        "Alayne Stone",
+        "Jonquil"
+      ],
+      "houseId": 362,
+      "playedBy": "Sophie Turner",
+      "imagePath": "https://img-4.linternaute.com/Jce7BU2_SLomp5gdmivmmlZxBAw=/1200x/smart/53f95ca3559e43ca8fdcc94c559047df/ccmcms-linternaute/11104190.jpg"
+    },
+    {
+      "id": 1022,
+      "name": "Theon Greyjoy",
+      "gender": "Male",
+      "titles": [
+        "Prince of Winterfell",
+        "Captain of Sea Bitch",
+        "Lord of the Iron Islands"
+      ],
+      "aliases": [
+        "Prince of Fools",
+        "Theon Turncloak",
+        "Reek",
+        "Theon Kinslayer"
+      ],
+      "houseId": 169,
+      "playedBy": "Alfie Allen",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Theon_Greyjoy-Alfie_Allen.jpg/220px-Theon_Greyjoy-Alfie_Allen.jpg"
+    },
+    {
+      "id": 1052,
+      "name": "Tyrion Lannister",
+      "gender": "Male",
+      "titles": [
+        "Acting Hand of the King",
+        "Master of Coin"
+      ],
+      "aliases": [
+        "The Imp",
+        "Halfman",
+        "The boyman",
+        "Giant of Lannister",
+        "Lord Tywin's Doom",
+        "Lord Tywin's Bane",
+        "Yollo",
+        "Hugor Hill",
+        "No-Nose",
+        "Freak",
+        "Dwarf"
+      ],
+      "houseId": 229,
+      "playedBy": "Peter Dinklage",
+      "imagePath": "https://img-4.linternaute.com/8h3tHnfJjhymGDdI3aKPUdhKtDc=/1198x/smart/c0d26ec98bb94a38b415ab4257109a24/ccmcms-linternaute/11104191.jpg"
+    },
+    {
+      "id": 1303,
+      "name": "Daenerys Targaryen",
+      "gender": "Female",
+      "titles": [
+        "Queen of the Andals and the Rhoynar and the First Men, Lord of the Seven Kingdoms",
+        "Khaleesi of the Great Grass Sea",
+        "Breaker of Shackles/Chains",
+        "Queen of Meereen",
+        "Princess of Dragonstone"
+      ],
+      "aliases": [
+        "Dany",
+        "Daenerys Stormborn",
+        "The Unburnt",
+        "Mother of Dragons",
+        "Mother",
+        "Mhysa",
+        "The Silver Queen",
+        "Silver Lady",
+        "Dragonmother",
+        "The Dragon Queen",
+        "The Mad King's daughter"
+      ],
+      "houseId": 378,
+      "playedBy": "Emilia Clarke",
+      "imagePath": "https://vignette.wikia.nocookie.net/gameofthrones/images/e/ee/QueenDaenerysTargaryenIronThrone.PNG/revision/latest?cb=20190520173137"
+    },
+    {
+      "id": 1442,
+      "name": "Gregor Clegane",
+      "gender": "Male",
+      "titles": [
+        "Ser",
+        "Knight of Clegane's Keep"
+      ],
+      "aliases": [
+        "The Mountain That Rides",
+        "The Mountain",
+        "The Great Dog"
+      ],
+      "houseId": 72,
+      "playedBy": "Hafþór Júlíus Björnsson",
+      "imagePath": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Gregor_Clegane-The_Mountain-Haf%C3%BE%C3%B3r_J%C3%BAl%C3%ADus_Bj%C3%B6rnsson.jpg/220px-Gregor_Clegane-The_Mountain-Haf%C3%BE%C3%B3r_J%C3%BAl%C3%ADus_Bj%C3%B6rnsson.jpg"
+    },
+    {
+      "id": 1560,
+      "name": "Jorah Mormont",
+      "gender": "Male",
+      "titles": [
+        "Ser",
+        "Lord of Bear Island"
+      ],
+      "aliases": [
+        "The Andal",
+        "Bear"
+      ],
+      "houseId": 378,
+      "playedBy": "Iain Glen",
+      "imagePath": "https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/3/34/Jorah_Mormont.png/revision/latest/scale-to-width-down/333?cb=20190419170046&path-prefix=fr"
+    }
+  ],
+  "houses": [
+    {
+      "id": 229,
+      "name": "House Lannister of Casterly Rock",
+      "region": "The Westerlands",
+      "coatOfArms": "A gold lion, on a crimson field",
+      "words": "Hear Me Roar!",
+      "seat": "Casterly Rock",
+      "imagePath": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/1200px-House_Lannister.svg.png"
+    },
+    {
+      "id": 362,
+      "name": "House Stark of Winterfell",
+      "region": "The North",
+      "coatOfArms": "A running grey direwolf, on an ice-white field",
+      "words": "Winter is Coming",
+      "seat": "Winterfell",
+      "imagePath": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest?cb=20170101103142"
+    },
+    {
+      "id": 395,
+      "name": "House Tully of Riverrun",
+      "region": "The Riverlands",
+      "coatOfArms": "A leaping silver trout on a field of blue and mud red",
+      "words": "Family, Duty, Honor",
+      "seat": "Riverrun",
+      "imagePath": "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest?cb=20170523040648"
+    },
+    {
+      "id": 11,
+      "name": "House Baelish of the Fingers",
+      "region": "The Vale",
+      "coatOfArms": "A grey stone head with fiery eyes, on a light green field",
+      "words": "",
+      "seat": "Harrenhal",
+      "imagePath": "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a4/House-Baelish-Main-Shield.PNG/revision/latest?cb=20161231114753"
+    },
+    {
+      "id": 17,
+      "name": "House Baratheon of Storm's End",
+      "region": "The Stormlands",
+      "coatOfArms": "A black crowned stag, on a gold field",
+      "words": "Ours is the Fury",
+      "seat": "Storm's End",
+      "imagePath": "https://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/1200px-House_Baratheon.svg.png"
+    },
+    {
+      "id": 378,
+      "name": "House Targaryen of King's Landing",
+      "region": "The Crownlands",
+      "coatOfArms": "Sable, a dragon thrice-headed gules",
+      "words": "Fire and Blood",
+      "seat": "Red Keep",
+      "imagePath": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest?cb=20181113055101"
+    },
+    {
+      "id": 169,
+      "name": "House Greyjoy of Pyke",
+      "region": "Iron Islands",
+      "coatOfArms": "Sable, a kraken Or",
+      "words": "We Do Not Sow",
+      "seat": "Pyke",
+      "imagePath": "https://awoiaf.westeros.org/images/thumb/5/5b/House_Greyjoy.svg/1200px-House_Greyjoy.svg.png"
+    },
+    {
+      "id": 72,
+      "name": "House Clegane",
+      "region": "The Westerlands",
+      "coatOfArms": "Three dogs on a yellow field",
+      "words": "",
+      "seat": "Clegane's Keep",
+      "imagePath": "https://awoiaf.westeros.org/images/thumb/b/b6/House_Clegane.svg/1200px-House_Clegane.svg.png"
+    },
+    {
+      "id": 999,
+      "name": "The Night's Watch",
+      "region": "The Wall",
+      "coatOfArms": "A sable field",
+      "words": "",
+      "seat": "Castle Black",
+      "imagePath": "https://awoiaf.westeros.org/images/thumb/f/f3/Night%27s_Watch.svg/1200px-Night%27s_Watch.svg.png"
+    }
+  ]
+}

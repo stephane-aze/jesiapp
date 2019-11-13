@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+button {
+  border: 2px solid transparent;
+  padding: .5rem;
+  border-radius: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: white;
+
+  &:hover {
+    &:not([disabled]) {
+      cursor: pointer;
+      border-color: white;
+    }
+    &[disabled] {
+      cursor: not-allowed;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+
+  &[disabled] {
+    background-color: $jesi-gray;
+  }
+}

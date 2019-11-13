@@ -1,0 +1,10 @@
+h1 {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: 1fr repeat(1, max-content);
+  align-items: center;
+}
