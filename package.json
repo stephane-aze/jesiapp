@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "app:start": "ng serve",
-    "api:start": "nodemon -r esm ./api/server.js",
+    "api:start": "cross-env JWT_SECRET=jesiappsecret nodemon -r esm ./api/server.js",
     "clean:coverage": "rimraf ./coverage"
   },
   "private": true,
@@ -23,6 +23,7 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+    "cross-env": "^6.0.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
