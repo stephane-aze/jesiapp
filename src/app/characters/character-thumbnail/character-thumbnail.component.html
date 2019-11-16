@@ -1,0 +1,7 @@
+<div class="container" (click)="openCharacterDetails()" *ngIf="character">
+  <img [src]="character.imagePath" [alt]="character.name">
+  <div class="content">
+    <h3>{{ character.name }}</h3>
+    <p>{{ character.title }}</p>
+  </div>
+</div>

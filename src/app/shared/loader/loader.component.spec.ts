@@ -1,8 +1,8 @@
 import { SimpleChange } from '@angular/core';
 import cases from 'jest-in-case';
 
+import useComponentTestSetup from 'src/test-setup/use-component-test-setup';
 import { LoaderComponent } from './loader.component';
-import useComponentTestSetup from '../../test-setup/use-component-test-setup';
 
 describe('LoaderComponent', () => {
   const testConfig = useComponentTestSetup<LoaderComponent>(LoaderComponent);

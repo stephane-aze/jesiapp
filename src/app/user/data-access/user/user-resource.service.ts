@@ -7,7 +7,7 @@ import { UserData } from './UserData';
 @Injectable({
   providedIn: 'root',
 })
-export class FetchUserService {
+export class UserResourceService {
   private resourcePath = '/api/users';
 
   public constructor(private readonly httpClient: HttpClient) {}

@@ -1,7 +1,7 @@
 import { SimpleChange } from '@angular/core';
 import cases from 'jest-in-case';
 
-import useComponentTestSetup from '../../test-setup/use-component-test-setup';
+import useComponentTestSetup from 'src/test-setup/use-component-test-setup';
 import { ButtonComponent } from './button.component';
 
 describe('ButtonComponent', () => {

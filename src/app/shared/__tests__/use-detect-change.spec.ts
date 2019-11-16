@@ -1,6 +1,7 @@
-import cases from 'jest-in-case';
 import { SimpleChange } from '@angular/core';
-import useDetectChange from './use-detect-change';
+import cases from 'jest-in-case';
+
+import useDetectChange from '../use-detect-change';
 
 cases(
   'useDetectChange',

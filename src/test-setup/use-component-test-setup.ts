@@ -1,12 +1,12 @@
 import { TestBed, ComponentFixture, async, TestModuleMetadata } from '@angular/core/testing';
 
-export default <T>(componentClass: any, moduleConfig: TestModuleMetadata = {}) => {
+export default <T = any>(componentClass: any, moduleConfig: TestModuleMetadata = {}) => {
   const config: {
     fixture: ComponentFixture<T>;
     component: T;
     element: HTMLElement;
     setup: (setValues?: () => void) => void;
-    init: typeof async;
+    init: (done: any, setValues?: () => void) => typeof async;
   } = {
     fixture: null,
     component: null,
@@ -15,14 +15,15 @@ export default <T>(componentClass: any, moduleConfig: TestModuleMetadata = {}) =
     init: null,
   };
 
-  config.init = async(() => {
-    TestBed.configureTestingModule({
-      declarations: [componentClass],
-      ...moduleConfig,
-    }).compileComponents();
+  config.init = (done: any, setValues = () => {}) =>
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [componentClass],
+        ...moduleConfig,
+      }).compileComponents();
 
-    config.setup();
-  });
+      config.setup(setValues);
+    })(done);
 
   config.setup = (setValues = () => {}) => {
     config.fixture = TestBed.createComponent<T>(componentClass);

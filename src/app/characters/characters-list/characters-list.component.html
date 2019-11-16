@@ -1,0 +1,17 @@
+<section *ngIf="selectedCharacter" class="spaced">
+  <jesi-character-thumbnail [character]="selectedCharacter"></jesi-character-thumbnail>
+</section>
+
+<div class="spaced">
+  <input type="text" [(ngModel)]="filterInput" (keyup)="onFilter()" [placeholder]="filterPlaceholder" />
+  <jesi-button secondary (click)="reset()">clear</jesi-button>
+</div>
+
+<section *ngIf="characters$ | async as characters; else loading">
+  <jesi-character-thumbnail *ngFor="let char of characters" [character]="char" (chose)="onSelectCharacter($event)">
+  </jesi-character-thumbnail>
+</section>
+
+<ng-template #loading>
+  <jesi-loader center></jesi-loader>
+</ng-template>

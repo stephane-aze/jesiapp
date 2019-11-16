@@ -1,7 +1,7 @@
 import { fakeAsync } from '@angular/core/testing';
 import { AuthService } from './auth.service';
 import { UserAuth } from './UserAuth';
-import useHttpServiceTestSetup from 'src/app/test-setup/use-http-service-test-setup';
+import useHttpServiceTestSetup from 'src/test-setup/use-http-service-test-setup';
 
 describe('AuthService', () => {
   const testConfig = useHttpServiceTestSetup<AuthService>(AuthService);

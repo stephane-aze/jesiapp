@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "app:start": "ng serve",
-    "api:start": "nodemon -r esm ./api/server.js"
+    "api:start": "nodemon -r esm ./api/server.js",
+    "clean:coverage": "rimraf ./coverage"
   },
   "private": true,
   "dependencies": {
@@ -52,6 +53,7 @@
     "nodemon": "^1.19.4",
     "prettier": "^1.19.1",
     "protractor": "~5.4.0",
+    "rimraf": "^3.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
