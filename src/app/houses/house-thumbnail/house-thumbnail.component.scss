@@ -1,0 +1,42 @@
+:host {
+  display: grid;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    .content {
+      transform: unset;
+    }
+    img {
+      transform: scale(1.02);
+      filter: unset;
+    }
+  }
+
+  .content, img {
+    transition: all ease-in-out .3s;
+  }
+
+  .content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 1rem;
+    padding: 1rem;
+    background-color: #22222285;
+    transform: translateY(100%);
+    h3, p {
+      margin: 0;
+    }
+  }
+
+  img {
+    width: 100%;
+    min-height: 100px;
+    filter: grayscale(1);
+  }
+}

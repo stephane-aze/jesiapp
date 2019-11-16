@@ -1,0 +1,8 @@
+<section *ngIf="houses$ | async as houses; else loading">
+  <jesi-house-thumbnail *ngFor="let house of houses" [house]="house">
+  </jesi-house-thumbnail>
+</section>
+
+<ng-template #loading>
+  <jesi-loader center></jesi-loader>
+</ng-template>

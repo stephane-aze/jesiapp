@@ -24,6 +24,7 @@ module.exports = {
     '!src/app/**/*.module.ts',
     '!src/app/**/*.array.ts',
     '!src/app/fragmentTypes.ts',
+    '!src/**/__tests__/**/*.ts',
   ],
   moduleFileExtensions: ['ts', 'html', 'js', 'json'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/', 'src/app/*.{js}'],

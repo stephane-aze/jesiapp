@@ -12,8 +12,8 @@ import { DataLoaderService } from 'src/app/shared/data-loader.service';
   providers: [DataLoaderService],
 })
 export class CharactersListComponent implements OnInit, JesiappPage {
-  public readonly pageTitle = 'Liste de Personnages';
-  public readonly filterPlaceholder = 'Filtrer par nom';
+  public readonly pageTitle = 'Characters list';
+  public readonly filterPlaceholder = 'Filter by name';
 
   public selectedCharacter!: Character;
   public filterInput!: string;

@@ -1,6 +1,6 @@
 import cases from 'jest-in-case';
-import { CharacterShape } from '../CharacterShape';
 import mockCharacterModel from '../../__tests__/mock-character-model';
+import { CharacterShape } from '../CharacterShape';
 
 describe('CharacterShape', () => {
   cases(
