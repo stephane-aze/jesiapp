@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { JesiappPage } from 'src/app/shared/JesiappPage';
 import { Observable } from 'rxjs';
-import { House } from '../House';
+
+import { JesiappPage } from 'src/app/shared/JesiappPage';
 import { HousesService } from '../houses.service';
+import { House } from '../House';
 
 @Component({
   selector: 'jesi-houses-list',

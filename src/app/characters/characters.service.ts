@@ -14,4 +14,12 @@ export class CharactersService {
   public listCharacters(): Observable<Character[]> {
     return this.resource.fetchCharacters().pipe(map(Character.NEW_BUNCH));
   }
+
+  public listHouseCharacters(houseId: number): Observable<Character[]> {
+    return this.resource.fetchCharacters({ houseId }).pipe(map(Character.NEW_BUNCH));
+  }
+
+  public getCharacter(id: number): Observable<Character> {
+    return this.resource.fetchCharacter(id).pipe(map(Character.NEW));
+  }
 }

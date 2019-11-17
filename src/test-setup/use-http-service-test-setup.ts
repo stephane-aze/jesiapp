@@ -1,14 +1,9 @@
 import { TestBed, async, TestModuleMetadata } from '@angular/core/testing';
 import { HttpTestingController, HttpClientTestingModule } from '@angular/common/http/testing';
+import { HttpServiceTestEnv } from './HttpServiceTestEnv';
 
 export default <T>(serviceClass: any, moduleConfig: TestModuleMetadata = {}) => {
-  const config: {
-    service: T;
-    httpTestingController: HttpTestingController;
-    setup: () => void;
-    init: typeof async;
-    teardown: () => void;
-  } = {
+  const config: HttpServiceTestEnv<T> = {
     service: null,
     httpTestingController: null,
     setup: null,

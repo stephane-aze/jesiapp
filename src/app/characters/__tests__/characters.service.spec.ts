@@ -44,4 +44,48 @@ describe('CharactersService', () => {
       });
     });
   });
+
+  describe('listHouseCharacters()', () => {
+    test('when called, then requests data from resource service', fakeAsync(() => {
+      jest.spyOn(resource, 'fetchCharacters').mockReturnValueOnce(EMPTY);
+
+      service.listHouseCharacters(1);
+
+      expect(resource.fetchCharacters).toHaveBeenCalledTimes(1);
+      expect(resource.fetchCharacters).toHaveBeenCalledWith({ houseId: 1 });
+    }));
+
+    test('when received data, then returns it as Character instances', () => {
+      const mockData = mockCharacterShape();
+
+      jest.spyOn(resource, 'fetchCharacters').mockReturnValueOnce(of([mockData]));
+
+      service.listHouseCharacters(1).subscribe(data => {
+        data.forEach(model => {
+          expect(model).toBeInstanceOf(Character);
+        });
+      });
+    });
+  });
+
+  describe('getCharacter()', () => {
+    test('when called, then requests data from resource service', fakeAsync(() => {
+      jest.spyOn(resource, 'fetchCharacter').mockReturnValueOnce(EMPTY);
+
+      service.getCharacter(1);
+
+      expect(resource.fetchCharacter).toHaveBeenCalledTimes(1);
+      expect(resource.fetchCharacter).toHaveBeenCalledWith(1);
+    }));
+
+    test('when received data, then returns it as Character instances', () => {
+      const mockData = mockCharacterShape();
+
+      jest.spyOn(resource, 'fetchCharacter').mockReturnValueOnce(of(mockData));
+
+      service.getCharacter(1).subscribe(data => {
+        expect(data).toBeInstanceOf(Character);
+      });
+    });
+  });
 });

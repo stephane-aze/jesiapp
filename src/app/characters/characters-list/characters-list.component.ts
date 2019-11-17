@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { JesiappPage } from 'src/app/shared/JesiappPage';
 import { CharactersService } from '../characters.service';

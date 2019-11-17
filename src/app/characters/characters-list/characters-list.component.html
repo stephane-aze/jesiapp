@@ -1,13 +1,14 @@
-<section *ngIf="selectedCharacter" class="spaced">
+<section *ngIf="selectedCharacter" class="spaced" data-testid="selected-character">
   <jesi-character-thumbnail [character]="selectedCharacter"></jesi-character-thumbnail>
 </section>
 
-<div class="spaced">
-  <input type="text" [(ngModel)]="filterInput" (keyup)="onFilter()" [placeholder]="filterPlaceholder" />
+<div class="spaced" data-testid="filtering">
+  <input type="text" [(ngModel)]="filterInput" name="filter-input" (keyup)="onFilter()"
+    [placeholder]="filterPlaceholder" />
   <jesi-button secondary (click)="reset()">clear</jesi-button>
 </div>
 
-<section *ngIf="characters$ | async as characters; else loading">
+<section *ngIf="characters$ | async as characters; else loading" data-testid="display-characters">
   <jesi-character-thumbnail *ngFor="let char of characters" [character]="char" (chose)="onSelectCharacter($event)">
   </jesi-character-thumbnail>
 </section>

@@ -14,7 +14,7 @@ describe('Character', () => {
     },
     {
       default: {
-        instances: [new Character(1, 'foo', 'bar', 'baz')],
+        instances: [new Character(1, 'foo', 'bar', 'baz', 1, 'Male', 'foobar')],
       },
       'static instantiation': {
         instances: [Character.NEW(mockCharacterShape())],
@@ -28,7 +28,7 @@ describe('Character', () => {
   cases(
     'nameStartsWith',
     ({ given: { characterName }, when: { proposal }, then: { result } }) => {
-      const character = new Character(1, characterName, 'bar', 'baz');
+      const character = new Character(1, characterName, 'bar', 'baz', 1, 'Male', 'foobar');
       expect(character.nameStartsWith(proposal)).toBe(result);
     },
     {

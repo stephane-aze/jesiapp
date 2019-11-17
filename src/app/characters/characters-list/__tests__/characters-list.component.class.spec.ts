@@ -1,20 +1,30 @@
 import { TestBed, fakeAsync } from '@angular/core/testing';
 import { of } from 'rxjs';
 
+import { ComponentTestEnv } from 'src/test-setup/ComponentTestEnv';
 import useComponentTestSetup from 'src/test-setup/use-component-test-setup';
-import mockCharacter from '../__tests__/mock-character';
+import mockCharacter from '../../__tests__/mock-character';
+
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DataLoaderService } from 'src/app/shared/data-loader.service';
-import { CharactersListComponent } from './characters-list.component';
-import { CharacterThumbnailComponent } from '../character-thumbnail/character-thumbnail.component';
-import { CharactersService } from '../characters.service';
-import { Character } from '../Character';
+import { CharactersService } from '../../characters.service';
+import { CharactersListComponent } from '../characters-list.component';
+import { CharacterThumbnailComponent } from '../../character-thumbnail/character-thumbnail.component';
+import { Character } from '../../Character';
 
-describe('CharactersListComponent', () => {
-  const testEnv = useComponentTestSetup<CharactersListComponent>(CharactersListComponent, {
-    declarations: [CharactersListComponent, CharacterThumbnailComponent],
-    imports: [SharedModule],
-    providers: [DataLoaderService],
+describe('CharactersListComponent class', () => {
+  let testEnv: ComponentTestEnv<CharactersListComponent>;
+
+  beforeAll(() => {
+    testEnv = useComponentTestSetup(CharactersListComponent, {
+      declarations: [CharactersListComponent, CharacterThumbnailComponent],
+      imports: [SharedModule],
+      providers: [DataLoaderService],
+    });
+  });
+
+  afterAll(() => {
+    testEnv = null;
   });
 
   beforeEach(done => {

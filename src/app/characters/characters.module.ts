@@ -8,5 +8,6 @@ import { CharacterThumbnailComponent } from './character-thumbnail/character-thu
 @NgModule({
   declarations: [CharactersListComponent, CharacterThumbnailComponent],
   imports: [SharedModule, CharactersRoutingModule],
+  exports: [CharacterThumbnailComponent],
 })
 export class CharactersModule {}
