@@ -21,12 +21,12 @@ describe('AuthService', () => {
       };
 
       const mockResponse: UserAuth = {
-        id: '1',
+        userId: '1',
         token: 'FOOBAR',
       };
 
       testConfig.service.authenticate(mockBody.login, mockBody.password).subscribe(userAuth => {
-        expect(userAuth.id).toBe(mockResponse.id);
+        expect(userAuth.userId).toBe(mockResponse.userId);
         expect(userAuth.token).toBe(mockResponse.token);
       });
 

@@ -1,6 +1,10 @@
 <header class="bg-blue padded spaced">
   <h1>{{ pageName }}</h1>
-  <jesi-button routerLink="/" primary>Home</jesi-button>
+  <jesi-button routerLink="/">Home</jesi-button>
   <jesi-button routerLink="/characters" primary>Characters</jesi-button>
   <jesi-button routerLink="/houses" primary>Houses</jesi-button>
+  <span *ngIf="user; else login">{{ user.firstName }}</span>
+  <ng-template #login>
+    <jesi-button routerLink="/user/login" secondary>Login</jesi-button>
+  </ng-template>
 </header>

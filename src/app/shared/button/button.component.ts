@@ -19,6 +19,8 @@ export class ButtonComponent implements OnChanges, OnInit {
   public classname!: string;
   public isDisabled!: true | null;
 
+  private readonly INVALID_VALUES = [false, null, undefined];
+
   public constructor() {}
 
   public ngOnInit(): void {
@@ -51,16 +53,20 @@ export class ButtonComponent implements OnChanges, OnInit {
   }
 
   public setIsDisabled(disabled: any): void {
-    this.isDisabled = ![false, undefined].includes(disabled) || null;
+    this.isDisabled = this.isInputValid(disabled) || null;
   }
 
   private setClassName(primary: any, secondary: any): void {
-    if (primary) {
+    if (this.isInputValid(primary)) {
       this.classname = 'bg-primary';
-    } else if (secondary) {
+    } else if (this.isInputValid(secondary)) {
       this.classname = 'bg-secondary';
     } else {
       this.classname = 'bg-gray';
     }
+  }
+
+  private isInputValid(propValue: any): boolean {
+    return !this.INVALID_VALUES.includes(propValue);
   }
 }

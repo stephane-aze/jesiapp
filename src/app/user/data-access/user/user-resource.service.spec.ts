@@ -14,19 +14,19 @@ describe('FetchUserService', () => {
 
   describe('user', () => {
     test('requests user by id', () => {
-      const expectedUri = '/api/users/foo';
+      const expectedUri = '/api/users/1';
 
-      testEnv.service.user('foo').subscribe();
+      testEnv.service.user(1).subscribe();
 
       const req = testEnv.httpTestingController.expectOne(expectedUri);
-      req.flush(null);
+      req.flush({});
     });
 
     test('returns the fetched data', () => {
-      const expectedUri = '/api/users/foo';
+      const expectedUri = '/api/users/1';
       const mockData = mockUserData();
 
-      testEnv.service.user('foo').subscribe(data => {
+      testEnv.service.user(1).subscribe(data => {
         expect(data).toMatchObject(mockData);
       });
 

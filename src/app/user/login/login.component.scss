@@ -1,0 +1,37 @@
+@import '../../../styles/variables';
+
+div.form-group {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 90px 1fr 90px;
+  max-width: 500px;
+  margin: 1rem auto;
+  line-height: 2rem;
+
+  input {
+    padding: .3rem;
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+
+}
+
+div.form-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+
+  jesi-button:first-child {
+    justify-self: flex-end;
+  }
+}
+
+.error {
+  font-size: .7rem;
+  color: $jesi-primary;
+}
+
+p {
+  text-align: center;
+}

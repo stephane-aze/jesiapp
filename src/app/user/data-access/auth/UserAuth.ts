@@ -1,4 +1,4 @@
 export interface UserAuth {
-  id: string;
+  userId: number;
   token: string;
 }

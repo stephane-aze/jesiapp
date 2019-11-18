@@ -1,9 +1,10 @@
-export interface UserData {
-  id: string;
+export interface UserModel {
+  id: number;
   login: string;
   password: string;
   firstName: string;
   lastName: string;
   email: string;
-  optEmail: boolean;
+  favoriteCharacter: number;
+  favoriteHouse: number;
 }

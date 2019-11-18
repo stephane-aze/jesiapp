@@ -14,7 +14,7 @@ export default (req, res) => {
 
   if (user) {
     const token = jwt.sign({ id: user.id }, jwtSecret);
-    res.json({ userID: user.id, token });
+    res.json({ userId: user.id, token });
   } else {
     res.status(403).json({ error: 'authentication failed' });
   }
