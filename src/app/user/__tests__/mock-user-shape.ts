@@ -1,4 +1,4 @@
-import mockUserData from './mock-user-data';
+import mockUserModel from './mock-user-model';
 import { UserShape } from '../data-access/user/UserShape';
 
-export default (data = {}) => UserShape.NEW(mockUserData(data));
+export default (data = {}) => UserShape.NEW(mockUserModel(data));

@@ -1,5 +1,5 @@
 import useHttpServiceTestSetup from 'src/test-setup/use-http-service-test-setup';
-import mockUserData from '../../__tests__/mock-user-data';
+import mockUserModel from '../../__tests__/mock-user-model';
 import { UserResourceService } from './user-resource.service';
 
 describe('FetchUserService', () => {
@@ -24,7 +24,7 @@ describe('FetchUserService', () => {
 
     test('returns the fetched data', () => {
       const expectedUri = '/api/users/1';
-      const mockData = mockUserData();
+      const mockData = mockUserModel();
 
       testEnv.service.user(1).subscribe(data => {
         expect(data).toMatchObject(mockData);
