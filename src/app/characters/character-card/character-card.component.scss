@@ -1,0 +1,43 @@
+@import '../../../styles/variables';
+
+section {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 1rem;
+  position: relative;
+
+  &.star::after {
+    content: '★';
+    position: absolute;
+    padding: 4px 5px 4px 3px;
+    color: white;
+    right: 5px;
+    top: 5px;
+    background-color: $jesi-secondary;
+    width: 10px;
+    line-height: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+  }
+}
+
+h3 {
+  margin: .2rem;
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted $jesi-blue;
+}
+
+img {
+  width: 100%;
+}
+
+dt {
+  font-weight: bold;
+  font-style: italic;
+  font-size: .8rem;
+}
+
+dd {
+  margin-bottom: .5rem;
+}
+

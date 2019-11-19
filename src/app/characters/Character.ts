@@ -7,7 +7,7 @@ export class Character {
     public readonly title: string,
     public readonly imagePath: string,
     public readonly houseId: number,
-    public readonly gender: 'Male' | 'Female',
+    public readonly aliases: string[],
     public readonly playedBy: string,
   ) {}
 
@@ -18,7 +18,7 @@ export class Character {
       data.displayTitle,
       data.imagePath,
       data.houseId,
-      data.gender,
+      data.aliases,
       data.playedBy,
     );
   }

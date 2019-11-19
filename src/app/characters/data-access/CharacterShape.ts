@@ -17,7 +17,7 @@ export class CharacterShape {
     this.name = data.name;
     this.gender = data.gender;
     this.titles = data.titles;
-    this.aliases = data.aliases;
+    this.aliases = (data.aliases || []).filter(e => e);
     this.houseId = data.houseId;
     this.playedBy = data.playedBy;
     this.imagePath = data.imagePath;

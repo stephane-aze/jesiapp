@@ -1,0 +1,26 @@
+main {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-gap: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+dt {
+  font-weight: bold;
+  font-style: italic;
+  font-size: .7rem;
+}
+
+dd {
+  margin-bottom: .5rem;
+  font-size: .8rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}

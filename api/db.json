@@ -467,7 +467,7 @@
   "houses": [
     {
       "id": 229,
-      "name": "House Lannister of Casterly Rock",
+      "name": "House Lannister",
       "region": "The Westerlands",
       "coatOfArms": "A gold lion, on a crimson field",
       "words": "Hear Me Roar!",
@@ -476,7 +476,7 @@
     },
     {
       "id": 362,
-      "name": "House Stark of Winterfell",
+      "name": "House Stark",
       "region": "The North",
       "coatOfArms": "A running grey direwolf, on an ice-white field",
       "words": "Winter is Coming",
@@ -485,7 +485,7 @@
     },
     {
       "id": 395,
-      "name": "House Tully of Riverrun",
+      "name": "House Tully",
       "region": "The Riverlands",
       "coatOfArms": "A leaping silver trout on a field of blue and mud red",
       "words": "Family, Duty, Honor",
@@ -494,7 +494,7 @@
     },
     {
       "id": 11,
-      "name": "House Baelish of the Fingers",
+      "name": "House Baelish",
       "region": "The Vale",
       "coatOfArms": "A grey stone head with fiery eyes, on a light green field",
       "words": "",
@@ -503,7 +503,7 @@
     },
     {
       "id": 17,
-      "name": "House Baratheon of Storm's End",
+      "name": "House Baratheon",
       "region": "The Stormlands",
       "coatOfArms": "A black crowned stag, on a gold field",
       "words": "Ours is the Fury",
@@ -512,7 +512,7 @@
     },
     {
       "id": 378,
-      "name": "House Targaryen of King's Landing",
+      "name": "House Targaryen",
       "region": "The Crownlands",
       "coatOfArms": "Sable, a dragon thrice-headed gules",
       "words": "Fire and Blood",
@@ -521,7 +521,7 @@
     },
     {
       "id": 169,
-      "name": "House Greyjoy of Pyke",
+      "name": "House Greyjoy",
       "region": "Iron Islands",
       "coatOfArms": "Sable, a kraken Or",
       "words": "We Do Not Sow",
