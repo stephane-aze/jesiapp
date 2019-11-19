@@ -5,6 +5,7 @@ import { JesiappPage } from 'src/app/shared/JesiappPage';
 import { CharactersService } from '../characters.service';
 import { Character } from '../Character';
 import { DataLoaderService } from 'src/app/shared/data-loader.service';
+import { UserService } from 'src/app/user/user.service';
 
 @Component({
   templateUrl: './characters-list.component.html',
@@ -15,17 +16,19 @@ export class CharactersListComponent implements OnInit, JesiappPage {
   public readonly pageTitle = 'Characters list';
   public readonly filterPlaceholder = 'Filter by name';
 
-  public selectedCharacter!: Character;
   public filterInput!: string;
+  public favoriteCharacterId!: number;
   public characters$!: Observable<Character[]>;
 
   public constructor(
-    private charactersService: CharactersService,
-    private charactersLoaderService: DataLoaderService<Character[]>,
+    private readonly charactersService: CharactersService,
+    private readonly charactersLoaderService: DataLoaderService<Character[]>,
+    private readonly userService: UserService,
   ) {}
 
   public ngOnInit(): void {
     this.initCharactersLoader();
+    this.initFavoriteCharaterId();
   }
 
   public onFilter(): void {
@@ -42,7 +45,18 @@ export class CharactersListComponent implements OnInit, JesiappPage {
   }
 
   public onSelectCharacter(character: Character): void {
-    this.selectedCharacter = character;
+    if (this.userService.currentUser) {
+      this.userService.addFavoriteCharacter(character.id).subscribe(() => {
+        this.favoriteCharacterId = character.id;
+      });
+    }
+  }
+
+  private initFavoriteCharaterId(): void {
+    const { currentUser } = this.userService;
+    if (currentUser) {
+      this.favoriteCharacterId = currentUser.favoriteCharacter;
+    }
   }
 
   private initCharactersLoader(): void {

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, switchMap, catchError } from 'rxjs/operators';
 
 import { HouseShape } from './HouseShape';
 import { HouseModel } from './HouseModel';
@@ -21,8 +21,17 @@ export class HousesResourceService {
     );
   }
 
+  public fetchHouse(id: number): Observable<HouseShape> {
+    return this.requestHouse(id).pipe(map(HouseShape.NEW));
+  }
+
   public requestHouses(): Observable<HouseModel[]> {
     const uri = this.resourcePath;
     return this.http.get<HouseModel[]>(uri);
+  }
+
+  public requestHouse(id: number): Observable<HouseModel> {
+    const uri = `${this.resourcePath}/${id}`;
+    return this.http.get<HouseModel>(uri);
   }
 }

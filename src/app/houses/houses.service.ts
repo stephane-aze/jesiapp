@@ -14,4 +14,8 @@ export class HousesService {
   public listHouses(): Observable<House[]> {
     return this.resource.fetchHouses().pipe(map(House.NEW_BUNCH));
   }
+
+  public getHouse(id: number): Observable<House> {
+    return this.resource.fetchHouse(id).pipe(map(House.NEW));
+  }
 }

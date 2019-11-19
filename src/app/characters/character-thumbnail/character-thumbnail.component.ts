@@ -8,6 +8,7 @@ import { Character } from '../Character';
 })
 export class CharacterThumbnailComponent {
   @Input() public character!: Character;
+  @Input() public isFavorite!: boolean;
   @Output() public chose = new EventEmitter<Character>();
 
   public openCharacterDetails(): void {

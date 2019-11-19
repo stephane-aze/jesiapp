@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { switchMap, map, tap } from 'rxjs/operators';
 
 import { AuthService } from './data-access/auth/auth.service';
@@ -30,5 +30,18 @@ export class UserService {
 
   public logout(): void {
     this.authenticatedUser = null;
+  }
+
+  public addFavoriteCharacter(characterId: number): Observable<User> {
+    if (this.authenticatedUser) {
+      return this.resource.updateUser(this.authenticatedUser.id, { favoriteCharacter: characterId }).pipe(
+        map(User.NEW),
+        tap(user => {
+          this.authenticatedUser = user;
+        }),
+      );
+    }
+
+    return of(null);
   }
 }

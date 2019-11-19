@@ -1,0 +1,39 @@
+<div class="text-center">
+  <h3>Your favorites are</h3>
+
+  <section class="favorites">
+    <div>
+      <h4>House</h4>
+      <div class="favorite-element">
+        <ng-container *ngIf="house$ | async as house; else noHouse">
+          <jesi-entity-preview [entity]="house"></jesi-entity-preview>
+        </ng-container>
+        <ng-template #noHouse>
+          <ng-container *ngIf="!houseId; else houseLoader">
+            <div class="favorite-placeholder">No Favorite Yet</div>
+          </ng-container>
+          <ng-template #houseLoader>
+            <jesi-loader center></jesi-loader>
+          </ng-template>
+        </ng-template>
+      </div>
+    </div>
+
+    <div>
+      <h4>Character</h4>
+      <div class="favorite-element">
+        <ng-container *ngIf="character$ | async as character; else noCharacter">
+          <jesi-entity-preview [entity]="character"></jesi-entity-preview>
+        </ng-container>
+        <ng-template #noCharacter>
+          <ng-container *ngIf="!characterId; else characterLoader">
+            <div class="favorite-placeholder">No Favorite Yet</div>
+          </ng-container>
+          <ng-template #characterLoader>
+            <jesi-loader center></jesi-loader>
+          </ng-template>
+        </ng-template>
+      </div>
+    </div>
+  </section>
+</div>

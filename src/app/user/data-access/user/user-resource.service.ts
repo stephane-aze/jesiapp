@@ -18,8 +18,17 @@ export class UserResourceService {
     return this.requestUser(userId).pipe(map(UserShape.NEW));
   }
 
+  public updateUser(userId: number, data: UserModel): Observable<UserShape> {
+    return this.patchUser(userId, data).pipe(map(UserShape.NEW));
+  }
+
   private requestUser(userId: number): Observable<UserModel> {
     const URL = `${this.resourcePath}/${userId}`;
     return this.httpClient.get<UserModel>(URL);
+  }
+
+  private patchUser(userId: number, data: UserModel): Observable<UserModel> {
+    const URL = `${this.resourcePath}/${userId}`;
+    return this.httpClient.patch<UserModel>(URL, data);
   }
 }

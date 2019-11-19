@@ -1,7 +1,7 @@
 <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" novalidate autocomplete="off">
   <div class="form-group">
     <label for="login">Login</label>
-    <input id="login" type="text" name="login" ngModel required #login />
+    <input id="login" type="text" name="login" ngModel required #login autofocus />
     <span class="error" *ngIf="login.touched && !!login.errors?.required">Required</span>
   </div>
 

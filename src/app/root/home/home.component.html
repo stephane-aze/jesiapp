@@ -1,0 +1,15 @@
+<main>
+  <h1 class="padded text-center">Welcome to the Jest powered<br />A Song Of Ice And Fire App!</h1>
+
+  <div class="text-center padded">
+    <ng-container *ngIf="user; else login">
+      <h2>Welcome {{ user.firstName }}!</h2>
+      <jesi-favorites [characterId]="user.favoriteCharacter" [houseId]="user.favoriteHouse"></jesi-favorites>
+    </ng-container>
+
+    <ng-template #login>
+      <jesi-button primary routerLink="/user/login">Please log in</jesi-button>
+    </ng-template>
+  </div>
+
+</main>

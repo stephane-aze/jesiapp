@@ -1,0 +1,23 @@
+section.favorites {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.favorite-element {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+}
+
+div.favorite-placeholder {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 0.7rem;
+}
