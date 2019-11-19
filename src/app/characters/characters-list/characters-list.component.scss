@@ -8,4 +8,7 @@ section {
 input {
   padding: 0.5rem;
   margin-right: 1rem;
+  &:active, &:focus {
+    outline: none;
+  }
 }

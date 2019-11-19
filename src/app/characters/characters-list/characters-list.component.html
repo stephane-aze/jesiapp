@@ -1,6 +1,6 @@
 <div class="spaced" data-testid="filtering">
-  <input type="text" [(ngModel)]="filterInput" name="filter-input" (keyup)="onFilter()"
-    [placeholder]="filterPlaceholder" />
+  <input type="text" [(ngModel)]="filterInput" name="filter-input" (keyup)="onFilter()" [placeholder]="
+    filterPlaceholder" autocomplete="off" />
   <jesi-button secondary (click)="reset()">clear</jesi-button>
 </div>
 

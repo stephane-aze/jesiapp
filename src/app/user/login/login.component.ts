@@ -8,7 +8,6 @@ import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
 @Component({
-  selector: 'jesi-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })

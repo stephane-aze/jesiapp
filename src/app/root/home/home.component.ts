@@ -4,7 +4,6 @@ import { JesiappPage } from 'src/app/shared/JesiappPage';
 import { UserService } from 'src/app/user/user.service';
 
 @Component({
-  selector: 'jesi-home',
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements JesiappPage {

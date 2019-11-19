@@ -6,7 +6,6 @@ import { HousesService } from '../houses.service';
 import { House } from '../House';
 
 @Component({
-  selector: 'jesi-houses-list',
   templateUrl: './houses-list.component.html',
   styleUrls: ['./houses-list.component.scss'],
 })
