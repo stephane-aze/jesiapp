@@ -128,35 +128,4 @@ describe('CharactersListComponent', () => {
       expect(testEnv.component.reset).toHaveBeenCalledTimes(1);
     });
   });
-
-  describe('selected character', () => {
-    test('when no value, does not display the section', () => {
-      const selectedCharacterSection = testEnv.getDebugByTestId('selected-character');
-      expect(testEnv.component.selectedCharacter).toBeFalsy();
-      expect(selectedCharacterSection).toBeFalsy();
-    });
-
-    test('when a selected character is set, display the section with a thumbnail inside', fakeAsync(() => {
-      testEnv.component.selectedCharacter = mockCharacter();
-      testEnv.fixture.detectChanges();
-
-      testEnv.fixture.whenStable().then(() => {
-        const selectedCharacterSection = testEnv.getDebugByTestId('selected-character');
-        expect(selectedCharacterSection).toBeTruthy();
-        const children = selectedCharacterSection.nativeElement.querySelectorAll('jesi-character-thumbnail');
-        expect(children.length).toBe(1);
-      });
-    }));
-
-    test('when a selected character is set, passes its data to the thumbnail component', fakeAsync(() => {
-      testEnv.component.selectedCharacter = mockCharacter();
-      testEnv.fixture.detectChanges();
-
-      testEnv.fixture.whenStable().then(() => {
-        const child: CharacterThumbnailComponent = testEnv.getChild(CharacterThumbnailComponent).componentInstance;
-
-        expect(child.character).toMatchObject(mockCharacter());
-      });
-    }));
-  });
 });

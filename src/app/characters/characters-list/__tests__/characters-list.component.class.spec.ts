@@ -92,16 +92,4 @@ describe('CharactersListComponent class', () => {
       });
     }));
   });
-
-  describe('onSelectCharacter()', () => {
-    test('receives a model set to the public selectedCharacter property', () => {
-      expect(testEnv.component.selectedCharacter).toBeFalsy();
-
-      testEnv.component.onSelectCharacter(mockCharacter());
-
-      expect(testEnv.component.selectedCharacter).toBeTruthy();
-      expect(testEnv.component.selectedCharacter).toBeInstanceOf(Character);
-      expect(testEnv.component.selectedCharacter).toMatchObject(mockCharacter());
-    });
-  });
 });

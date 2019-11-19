@@ -45,4 +45,25 @@ describe('HousesService', () => {
       });
     });
   });
+
+  describe('getHouse', () => {
+    test('when called with an id, then calls the resource service with the same id', () => {
+      jest.spyOn(resource, 'fetchHouse').mockReturnValueOnce(EMPTY);
+
+      service.getHouse(1234);
+
+      expect(resource.fetchHouse).toHaveBeenCalledTimes(1);
+      expect(resource.fetchHouse).toHaveBeenCalledWith(1234);
+    });
+
+    test('when received data, then returns it as House instances', () => {
+      const mockData = mockHouseShape();
+
+      jest.spyOn(resource, 'fetchHouse').mockReturnValueOnce(of(mockData));
+
+      service.getHouse(1234).subscribe(model => {
+        expect(model).toBeInstanceOf(House);
+      });
+    });
+  });
 });
