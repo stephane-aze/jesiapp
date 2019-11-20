@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"yarn app:start\" \"yarn api:start\"",
+    "start": "concurrently \"npm run app:start\" \"npm run api:start\"",
     "build": "ng build",
     "test": "ng test --runInBand --coverage",
     "tdd": "ng test --runInBand --watchAll",
